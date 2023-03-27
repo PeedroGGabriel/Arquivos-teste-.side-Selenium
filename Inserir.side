@@ -1,0 +1,126 @@
+{
+  "id": "624fdf6b-45c2-4a3d-8833-cd42575b9610",
+  "version": "2.0",
+  "name": "Inserir",
+  "url": "http://192.168.1.138:8080",
+  "tests": [{
+    "id": "27fd4bad-97f3-443b-88f3-8e1f0c16f69f",
+    "name": "Inserir",
+    "commands": [{
+      "id": "96b00d1c-feb4-4346-8d0b-046ccbe53e24",
+      "comment": "",
+      "command": "open",
+      "target": "http://192.168.1.138:8080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9fcd6fc-26a2-4d48-a493-c73928d8c9ec",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "970x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dba85976-71cf-451e-9adc-da51bd4a68be",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cadastro",
+      "targets": [
+        ["linkText=Cadastro", "linkText"],
+        ["css=span:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Cadastro')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/cadastrar')]", "xpath:href"],
+        ["xpath=//span[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cadastro')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c1ca509-afe9-49a9-840f-6c0a3dc4c1b3",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9240252-3d25-430a-8e85-46ed2c7bd8bb",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13d13d8a-ab43-4057-a882-eeddd8c6ccf5",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af7c7ec5-095f-4c10-b4bb-2e2ae47018e7",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "teste um"
+    }, {
+      "id": "d6b28bc7-1954-46f6-912a-16bc6a6b7ff3",
+      "comment": "",
+      "command": "type",
+      "target": "id=endereco",
+      "targets": [
+        ["id=endereco", "id"],
+        ["name=endereco", "name"],
+        ["css=#endereco", "css:finder"],
+        ["xpath=//input[@id='endereco']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "rua um"
+    }, {
+      "id": "d1e6055e-3ef9-44d6-8f68-65b3109167c8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f0e1589e-57a0-4908-8e27-c3027c48e644",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["27fd4bad-97f3-443b-88f3-8e1f0c16f69f"]
+  }],
+  "urls": ["http://192.168.1.138:8080/"],
+  "plugins": []
+}
